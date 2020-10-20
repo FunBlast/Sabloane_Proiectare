@@ -1,8 +1,10 @@
-public class Autor {
-    public String Aname;
+public class Autor
+{
+    public String name;
 
-    public Autor(String Aname) {
-        this.Aname=Aname;
+    public Autor(String name)
+    {
+        this.name=name;
     }
 
 }
