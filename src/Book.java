@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
-public class book {
+public class Book {
     String title;
-    public Autor autor;
+    public Author autor;
     public ArrayList<Element> content = new ArrayList<>();
 
-    public book(String title)
+    public Book(String title)
     {
         this.title = title;
     }
-    public void addAutor(Autor a)
+    public void addAutor(Author a)
     {
         autor =a;
     }

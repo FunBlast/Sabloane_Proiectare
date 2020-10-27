@@ -1,8 +1,8 @@
-public class Autor
+public class Author
 {
     public String name;
 
-    public Autor(String name)
+    public Author(String name)
     {
         this.name=name;
     }
