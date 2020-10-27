@@ -1,6 +1,8 @@
 import java.awt.*;
 
 public class ImageProxy implements Element{
+    String url;
+    Dimension dim;
     public String name;
     Image realImage=null;
 
