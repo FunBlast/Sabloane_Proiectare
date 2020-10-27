@@ -9,7 +9,7 @@ public class Image implements Element
     {
         this.imageName=ImageName;
         try{
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(3);
         }
         catch(InterruptedException e)
         {

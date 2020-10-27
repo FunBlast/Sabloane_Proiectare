@@ -17,14 +17,14 @@ public class Lab4 {
         System.out.println("Creation of the content took " + (endTime -
                 startTime) + " milliseconds");
         startTime = System.currentTimeMillis();
-        playboyS1.print();
+        playboyS2.print();
         endTime = System.currentTimeMillis();
-        System.out.println("Printing of the section 1 took " + (endTime -
+        System.out.println("Printing of the section 2 took " + (endTime -
                 startTime) + " milliseconds");
         startTime = System.currentTimeMillis();
-        playboyS1.print();
+        playboyS2.print();
         endTime = System.currentTimeMillis();
-        System.out.println("Printing again the section 1 took " + (endTime -
+        System.out.println("Printing again the section 2 took " + (endTime -
                 startTime) + " milliseconds");
     }
 }
