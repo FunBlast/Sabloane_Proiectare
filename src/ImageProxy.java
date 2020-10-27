@@ -10,12 +10,16 @@ public class ImageProxy implements Element{
         this.name = name;
     }
 
-    public void print()
+    Image loadImage()
     {
         if(realImage== null)
         {
             realImage = new Image(this.name);
         }
-        realImage.print();
+        return realImage;
+    }
+
+    public void print() {
+        loadImage().print();
     }
 }
