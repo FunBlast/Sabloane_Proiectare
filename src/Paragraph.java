@@ -15,7 +15,7 @@ public class Paragraph implements Element
     {
         if(align == null)
         {
-            System.out.println(this.text);
+            System.out.println("Paragraful: "+this.text);
         }
         else
         {

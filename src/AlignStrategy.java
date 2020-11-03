@@ -1,7 +1,6 @@
-public interface AlignStrategy {
+public interface AlignStrategy
+{
 
-    default void render(Paragraph p) {
-
-    }
+    public void render(Paragraph p);
 
 }
