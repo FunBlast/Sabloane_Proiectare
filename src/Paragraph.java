@@ -1,13 +1,29 @@
 public class Paragraph implements Element
 {
-    public String text;
+    private String text;
+    public AlignStrategy align;
 
+    public String getText()
+    {
+        return this.text;
+    }
     public Paragraph( String text)
     {
         this.text=text;
     }
     public void print()
     {
-        System.out.println("Paragraph:" + text);
+        if(align == null)
+        {
+            System.out.println(this.text);
+        }
+        else
+        {
+            align.render(this);
+        }
+    }
+    public void setAlignStrategy(AlignStrategy a)
+    {
+        this.align=a;
     }
 }

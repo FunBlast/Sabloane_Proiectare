@@ -1,6 +1,6 @@
 public class Table implements Element
 {
-    public String tableTitle;
+    private String tableTitle;
 
     public Table( String TaTitle)
     {
