@@ -29,4 +29,11 @@ public class Section implements Element {
             e.print();
         }
     }
+    public void accept(Visitor visitor)
+    {
+        visitor.visit(this);
+        for(Element elem : content){
+            elem.accept(visitor);
+        }
+    }
 }

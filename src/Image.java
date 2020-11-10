@@ -1,4 +1,3 @@
-import java.nio.channels.FileLockInterruptionException;
 import java.util.concurrent.TimeUnit;
 
 public class Image implements Element
@@ -21,6 +20,10 @@ public class Image implements Element
         {
             e.printStackTrace();
         }
+    }
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+
     }
 
 

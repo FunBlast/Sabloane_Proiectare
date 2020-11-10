@@ -26,4 +26,8 @@ public class Paragraph implements Element
     {
         this.align=a;
     }
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+
+    }
 }

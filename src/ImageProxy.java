@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class ImageProxy implements Element{
     public String name;
     Image realImage=null;
@@ -19,5 +17,11 @@ public class ImageProxy implements Element{
 
     public void print() {
         loadImage().print();
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+
     }
 }
