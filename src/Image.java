@@ -5,9 +5,15 @@ public class Image implements Element
 {
     private String imageName;
 
+    public void print()
+    {
+        System.out.println("Image with name:" + imageName);
+    }
+
     public Image( String ImageName)
     {
         this.imageName=ImageName;
+        new ImageLoaderFactory().load(ImageName);
         try{
             TimeUnit.SECONDS.sleep(3);
         }
@@ -16,8 +22,6 @@ public class Image implements Element
             e.printStackTrace();
         }
     }
-    public void print()
-    {
-        System.out.println("Image with name:" + imageName);
-    }
+
+
 }

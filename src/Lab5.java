@@ -1,6 +1,8 @@
-public class Lab4 {
+import java.io.IOException;
 
-    public static void main(String[] args) {
+public class Lab5 {
+
+    public static void main(String[] args) throws IOException {
         Section cap1 = new Section("Capitolul 1");
         Paragraph p1 = new Paragraph("Paragraph 1");
         cap1.add(p1);
@@ -10,6 +12,11 @@ public class Lab4 {
         cap1.add(p3);
         Paragraph p4 = new Paragraph("Paragraph 4");
         cap1.add(p4);
+
+        Image pic1 = new Image("img/img1.png");
+        Image pic2 = new Image("img/img2.jpg");
+        Image pic3 = new Image("img/img3.bmp");
+
         System.out.println("Printing without Alignment");
         System.out.println();
         cap1.print();
