@@ -1,8 +1,6 @@
-import java.io.IOException;
-
 public class Lab5 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
         Section cap1 = new Section("Capitolul 1");
         Paragraph p1 = new Paragraph("Paragraph 1");
         cap1.add(p1);
