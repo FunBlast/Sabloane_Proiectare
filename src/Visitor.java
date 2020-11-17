@@ -1,4 +1,5 @@
 public interface Visitor {
+    public abstract void visit(Book book);
     public abstract void visit(Image image);
     public abstract void visit(ImageProxy imageProxy);
     public abstract void visit(Paragraph paragraph);

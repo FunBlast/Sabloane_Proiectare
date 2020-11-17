@@ -19,6 +19,7 @@ public class JPGImageLoader {
             jFrame.setSize(new Dimension(picture.getWidth(), picture.getHeight()));
             jFrame.add(jPanel);
             jFrame.setVisible(true);
+            jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         }
         catch (IOException e) {
             e.printStackTrace();

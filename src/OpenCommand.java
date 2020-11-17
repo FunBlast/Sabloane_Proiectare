@@ -1,6 +1,8 @@
-public class Lab5 {
+public class OpenCommand implements Command{
 
-    public static void main(String[] args)  {
+    public void execute() {
+        Book b1=new Book("Book1");
+        Author a1 = new Author("George Cosbuc");
         Section cap1 = new Section("Capitolul 1");
         Paragraph p1 = new Paragraph("Paragraph 1");
         cap1.add(p1);
@@ -10,12 +12,13 @@ public class Lab5 {
         cap1.add(p3);
         Paragraph p4 = new Paragraph("Paragraph 4");
         cap1.add(p4);
-        cap1.add(new ImageProxy("ImageOne"));
-        cap1.add(new Image("ImageTwo"));
+//        cap1.add(new ImageProxy("jpgextension.jpg"));
         cap1.add(new Paragraph("Some text"));
         cap1.add(new Table("Table 1"));
-        BookStatistics stats = new BookStatistics();
-        cap1.accept(stats);
-        stats.printStatistics();
+        b1.addAutor(a1);
+        b1.addContent(cap1);
+
+        DocumentManager.getInstance().setBook(b1);
     }
+    
 }
